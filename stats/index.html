@@ -109,13 +109,21 @@
             <div class="section">
               
                 <h1 id="statistiken">Statistiken</h1>
-<p>Statistik erlaubt einen Überblick über einen Datenbestand, ähnlich wie es eine Zusamenfassung für ein Buch tut. </p>
+<p>Statistik erlaubt einen Überblick über einen Datenbestand, ähnlich wie es eine Zusamenfassung für ein Buch tut. In der Navigationsleiste wird die Station ausgewählt (Aktuell nur eine verfügbar) die gewünschten Parameter, sowie die Zeitdauer, welche die Statistik enthalten soll. Zudem kann die zeitliche Auflösung geändert werden. <code>Statistik</code> 
+- nach Jahr: ergibt eine Zeile pro Jahr
+<img alt="Jahresstatistik" src="../img/stat_jahr.png" title="Jahresstatistik" />
+- nach Monat: ergibt eine Zeile pro Monat, es wird ein einzelnes Jahr ausgewählt. Diese Statistik eignet sich für die Analyse von langfristigen Trends. 
+<img alt="Monatsstatistik" src="../img/stat_monat.png" title="Monatsstatistik" />
+- nach Tag: ergibt eine Zeile pro Tag, es wird ein Jahr und Monat ansgewählt. 
+<img alt="Tagesstatistik" src="../img/stat_tag.png" title="Tagesstatistik" /></p>
 <ul>
-<li>Extremwerte</li>
-<li>Mittelwert</li>
-<li>Standardabweichung</li>
-<li>Perzentile</li>
+<li>Extremwerte: min und max sind die im gewählten Zeitintervall aufgetretene kleinste und grösste Werte.</li>
+<li>Mittelwert: <img src="https://render.githubusercontent.com/render/math?math=\frac{\sum_{i=1}^{n} x_i}{n}"></li>
+<li>Standardabweichung
+<img src="https://render.githubusercontent.com/render/math?math=\sigma = \sqrt {\mu _2 }"></li>
+<li>Perzentile: Es werden die üblichsten Perzentile (5%, 25%, 50%, 75%, 90%, 95%) ausgegeben. Ein 25% Perzentil Wert von 8.8 für das Jahr 2008 bedeutet zum Beispiel, dass 25% der Werte in diesem Jahr kleiner und 75% grösser waren. %5 und 95% Perzentile zeigen den Bereich an, wo Extrem-Werte (besonders tiefe oder hohe Werte auch Outlier genannt) auftreten. 25% und 75% Perzentile zeigen den Bereich an, in den der Grossteil der Werte fallen (50% der Werte in diesem Bereich) und das 50% Perzentil wird auch als Median bezeichnet und zeigt ein Mittel der Werte. Im Gegensatz zum Mittelwert, ist der Median robuster gegeben Extremwerte. </li>
 </ul>
+<p>Die Statistiken werden automatisch neu berechnet nach jeder Änderung und als Tabellen im Ausgabebereich angezeigt. </p>
               
             </div>
           </div>
