@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="canonical" href="https://example.com/stats/">
+  <link rel="canonical" href="https://example.com/versions/">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Statistiken - Luftqualität Explorer für Basel-Stadt</title>
+  <title>Versionen - Luftqualität Explorer für Basel-Stadt</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Statistiken";
-    var mkdocs_page_input_path = "stats.md";
-    var mkdocs_page_url = "/stats/";
+    var mkdocs_page_name = "Versionen";
+    var mkdocs_page_input_path = "versions.md";
+    var mkdocs_page_url = "/versions/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -51,12 +51,10 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Benutzeranleitung</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../info/">Info</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Statistiken</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../stats/">Statistiken</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../plots/">Grafiken</a>
                     </li>
@@ -67,8 +65,10 @@
                     <li class="toctree-l1"><a class="reference internal" href="../about/">Über LQX-BS</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../versions/">Versionen</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Versionen</a>
+    <ul class="current">
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -91,12 +91,8 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Benutzeranleitung &raquo;</li>
-        
-      
     
-    <li>Statistiken</li>
+    <li>Versionen</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -108,26 +104,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="statistiken">Statistiken</h1>
-<p>Statistik erlaubt einen Überblick über einen Datenbestand, ähnlich wie es eine Zusammenfassung für ein Buch tut. In der Navigationsleiste wird die Station ausgewählt (Aktuell nur eine verfügbar), die gewünschten Parameter, sowie die Zeitdauer, welche die Statistik enthalten soll. Zudem kann die zeitliche Auflösung geändert werden. </p>
-<p><code>Statistik</code> </p>
-<ul>
-<li>nach Jahr: ergibt eine Zeile pro Jahr
-<img alt="Jahresstatistik" src="../img/stat_jahr.png" title="Jahresstatistik" /></li>
-<li>nach Monat: ergibt eine Zeile pro Monat, es wird ein einzelnes Jahr ausgewählt. Diese Statistik eignet sich für die Analyse von langfristigen Trends. 
-<img alt="Monatsstatistik" src="../img/stat_monat.png" title="Monatsstatistik" /></li>
-<li>nach Tag: ergibt eine Zeile pro Tag, es wird ein Jahr und Monat ansgewählt. 
-<img alt="Tagesstatistik" src="../img/stat_tag.png" title="Tagesstatistik" /></li>
-</ul>
-<p><strong>Statistik-Tabelle</strong></p>
-<ul>
-<li>Extremwerte: min und max sind die im gewählten Zeitintervall aufgetretene kleinste und grösste Werte.</li>
-<li>Mittelwert: <img src="https://render.githubusercontent.com/render/math?math=\frac{\sum_{i=1}^{n} x_i}{n}"></li>
-<li>Standardabweichung
-<img src="https://render.githubusercontent.com/render/math?math=\sigma = \sqrt {\mu _2 }"></li>
-<li>Perzentile: Es werden die üblichsten Perzentile (5%, 25%, 50%, 75%, 90%, 95%) ausgegeben. Ein 25% Perzentil Wert von 8.8 für das Jahr 2008 bedeutet zum Beispiel, dass 25% der Werte in den beobachteten Werten kleiner und 75% grösser waren. %5 und 95% Perzentile zeigen den Bereich an, wo Extrem-Werte (besonders tiefe oder hohe Werte auch Outlier genannt) auftreten. 25% und 75% Perzentile zeigen den Bereich an, in den der Grossteil der Werte fallen (50% der Werte innerhalb dieser beiden Perzentile) und das 50% Perzentil wird auch als Median bezeichnet und zeigt den Wert bei welchems die Hälfte aller Werte kleiner und die Hälfte aller WErte grösser ist. Im Gegensatz zum Mittelwert, ist der Median robuster gegeben Extremwerte. Eine deutliche Differenz zwischen Mittelwert und Median deutet darauf hin, dass die werte nicht normal verteilt sind. </li>
-</ul>
-<p>Die Statistiken werden automatisch neu berechnet nach jeder Änderung und als Tabellen im Ausgabebereich angezeigt. </p>
+                <h1 id="versionen">Versionen</h1>
               
             </div>
           </div>
@@ -135,10 +112,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../plots/" class="btn btn-neutral float-right" title="Grafiken">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../info/" class="btn btn-neutral" title="Info"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral" title="Über LQX-BS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -164,10 +139,8 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../info/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../about/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../plots/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
