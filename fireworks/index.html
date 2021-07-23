@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="canonical" href="https://example.com/versions/">
+  <link rel="canonical" href="https://example.com/fireworks/">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Versionen - Luftqualität Explorer für Basel-Stadt</title>
+  <title>Feuerwerke und Feinstaub - Luftqualität Explorer für Basel-Stadt</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Versionen";
-    var mkdocs_page_input_path = "versions.md";
-    var mkdocs_page_url = "/versions/";
+    var mkdocs_page_name = "Feuerwerke und Feinstaub";
+    var mkdocs_page_input_path = "fireworks.md";
+    var mkdocs_page_url = "/fireworks/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -51,7 +51,7 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Benutzeranleitung</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../info/">Info</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../stats/">Statistiken</a>
@@ -60,21 +60,17 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../exceedances/">Grenzwert Überschreitungen</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../fireworks/">Feuerwerke und Feinstaub</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Feuerwerke und Feinstaub</a>
+    <ul class="current">
+    </ul>
                     </li>
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../about/">Über LQX-BS</a>
                     </li>
                 </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Versionen</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#005-2272021">0.0.5 (22.7.2021)</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#004-1872021">0.0.4 (18.7.2021)</a>
-    </li>
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../versions/">Versionen</a>
                     </li>
                 </ul>
       </div>
@@ -97,8 +93,12 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
+        
+          <li>Benutzeranleitung &raquo;</li>
+        
+      
     
-    <li>Versionen</li>
+    <li>Feuerwerke und Feinstaub</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -110,14 +110,16 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="versionen">Versionen</h1>
-<h3 id="005-2272021">0.0.5 (22.7.2021)</h3>
-<ul>
-<li>Wenn Filter keine Daten zurückgaben, erzeugen die Plot Routinen einen Fehler.</li>
-<li>Im Startup Screen werden die aktuellsten Werte angezeigt.</li>
-</ul>
-<h3 id="004-1872021">0.0.4 (18.7.2021)</h3>
-<p>Erste Publikation</p>
+                <h1 id="feuerwerke-und-feinsataub">Feuerwerke und Feinsataub</h1>
+<p>Feuerwerke erzeugen Rauch und damit Feinstaub. Die resultierende Zunahme der PM10 und PM2.5 Konzentrationen lassen sich in der basler Luft in den meisten Jahren gut am Silvester und am 1. August beobachten. Die Feinstaub-Spitzen lassen sich auch in der Liniendiagramm-Grafik darstellen, allerdings jeweils nur ein einziges Jahr. Die Menuoption <code>Feuerwerke</code> filtert die Daten bereits nach den relevanten Tagen und überlagert die Feuerwerk-Spitzen der verschiedenen Jahre. In der Multisectbox "Jahr" können ein oder meherere Jahre ausgewählt und miteinander verglichen werden.</p>
+<p><img alt="1. August Stundenwerte" src="../img/fireworks1.png" title="1. August Stundenwerte" /> </p>
+<p><strong>Zeitliche Auflösung</strong>:
+Unter der Option <em>zeitliche Auflösung</em> können Stundenwerte oder Tagesmittelwerte ausgwählt werden:
+- Bei Stundenwerte wird das Zeitintervall des Ereignis (1.1. oder 1.8) plus minus ein Tag ausgewählt. Stundenwerte zeigen den Anstieg und Abfall der Konzentration am detailliertesten. Bei dieser Darstellung kann die Höne der Spitze aber darüber hinwegtäuschen, dass ein kurzer intensiver Anstieg wenig Einfluss auf den Tagesmittelwert hat, während eine tiefere, aber länger andauernde Spitze, den Tagesmittelwert stärker beeinflussen kann.
+- Tagesmittelwerte werden zusammen mit dem Grenzwert für PM10 angezeigt. Es wird ein Zeitintervall von plus/minus 10 Tage angezeigtDie Werte sind am 1. August generell rund 10-15µg/m³ höher, doch ist die Abweichung von der Basislinie viel weniger prominent als bei den Staundenwerte. Beim Neujahresfeuerwerk sind die Tagesmittelwerte kaum vom Grundrauschen der PM10 Konzentration zu unterscheiden, welches in dieser Jahreszeit von den Emmissionen der Heizungen beeinflusst ist. </p>
+<p><img alt="1. August Tagesmittelwerte" src="../img/fireworks2.png" title="1. August Tagesmittelwerte" /> </p>
+<p><strong>Zeitfenster</strong>
+Das Zeitfenster definiert, wieviele Tage vor und nach dem Ereignis angezeigt werden sollen. Wird zum Beispiel für den 1. August ein Fenster von 3 gewählt, so wird der Tag des Ereignisses (1.8.) sowie je ein Tag vor und nach dem Ereignis angezeigt. Für Tagesmittelwerte können grössere Zeitfenster gewählt werden, zum Beispiel 21 Tage (10 Tage vor und 10 nach dem Ereignis"). So kann untersucht werden, ob das Feuerwerk auch unter Berücksichtung eines grösseren Zeitfensters als Anomalie erkennbar bleibt.</p>
               
             </div>
           </div>
@@ -125,8 +127,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../about/" class="btn btn-neutral float-right" title="Über LQX-BS">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../about/" class="btn btn-neutral" title="Über LQX-BS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../exceedances/" class="btn btn-neutral" title="Grenzwert Überschreitungen"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -152,8 +156,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../about/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../exceedances/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
